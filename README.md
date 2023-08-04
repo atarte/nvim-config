@@ -3,5 +3,5 @@
 intall:
 
 ```
-git clone --depth 1  ~/.config/nvim
+git clone --depth 1 https://github.com/atarte/nvim-config.git ~/.config/nvim
 ```
