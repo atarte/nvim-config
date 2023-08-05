@@ -29,7 +29,7 @@ opt.splitbelow = true       -- Horizontal split to the bottom
 opt.ignorecase = true       -- Ignore case letters when search
 opt.smartcase = true        -- Ignore lowercase for the whole pattern
 opt.linebreak = true        -- Wrap on word boundary
-opt.termguicolors = true    -- Enable 24-bit RGB colors
+-- opt.termguicolors = true    -- Enable 24-bit RGB colors
 opt.laststatus=3            -- Set global statusline
 opt.iskeyword:append("-") -- minus become part of the word
 
@@ -58,31 +58,31 @@ opt.updatetime = 250        -- ms to wait for trigger an event
 
 -- -- Disable builtin plugins
 local disabled_built_ins = {
-   "2html_plugin",
-   "getscript",
-   "getscriptPlugin",
-   "gzip",
-   "logipat",
+   -- "2html_plugin",
+   -- "getscript",
+   -- "getscriptPlugin",
+   -- "gzip",
+   -- "logipat",
    -- "netrw",
    -- "netrwPlugin",
    -- "netrwSettings",
    -- "netrwFileHandlers",
-   "matchit",
-   "tar",
-   "tarPlugin",
-   "rrhelper",
-   "spellfile_plugin",
-   "vimball",
-   "vimballPlugin",
-   "zip",
-   "zipPlugin",
-   "tutor",
-   "rplugin",
-   "synmenu",
-   "optwin",
-   "compiler",
-   "bugreport",
-   "ftplugin",
+   -- "matchit",
+   -- "tar",
+   -- "tarPlugin",
+   -- "rrhelper",
+   -- "spellfile_plugin",
+   -- "vimball",
+   -- "vimballPlugin",
+   -- "zip",
+   -- "zipPlugin",
+   -- "tutor",
+   -- "rplugin",
+   -- "synmenu",
+   -- "optwin",
+   -- "compiler",
+   -- "bugreport",
+   -- "ftplugin",
 }
 
 for _, plugin in pairs(disabled_built_ins) do
