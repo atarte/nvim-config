@@ -49,8 +49,9 @@ return require('packer').startup(function(use)
     -- Lualine
     use { 'nvim-lualine/lualine.nvim', }
 
+    -- git signs remove for now
     -- Git intergration
-    use { 'lewis6991/gitsigns.nvim' }
+    -- use { 'lewis6991/gitsigns.nvim' }
 
     -- Indent show
     use "lukas-reineke/indent-blankline.nvim"
