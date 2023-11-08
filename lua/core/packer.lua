@@ -13,26 +13,6 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
---Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-    -- use({
-    --     'rose-pine/neovim',
-    --     as = 'rose-pine',
-    --     config = function()
-    --         vim.cmd('colorscheme rose-pine')
-    --     end
-    -- })
-
-    -- use({
-    --     "folke/trouble.nvim",
-    --     config = function()
-    --         require("trouble").setup {
-    --             icons = false,
-    --             -- your configuration comes here
-    --             -- or leave it empty to use the default settings
-    --             -- refer to the configuration section below
-    --         }
-    --     end
-    -- })
 
     -- TreeSitter
     use {
@@ -41,13 +21,6 @@ return require('packer').startup(function(use)
             local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
             ts_update()
         end, }
-
-    -- use("nvim-treesitter/playground")
-    -- use("theprimeagen/harpoon")
-    -- use("theprimeagen/refactoring.nvim")
-    -- use("mbbill/undotree")
-    -- use("tpope/vim-fugitive")
-    -- use("nvim-treesitter/nvim-treesitter-context");
 
     -- LSP
     use {
@@ -74,13 +47,14 @@ return require('packer').startup(function(use)
     }
 
     -- Lualine
-    use {
-        'nvim-lualine/lualine.nvim',
-        -- requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
+    use { 'nvim-lualine/lualine.nvim', }
 
-    -- use("folke/zen-mode.nvim")
-    -- use("github/copilot.vim")
-    -- use("eandrju/cellular-automaton.nvim")
-    -- use("laytan/cloak.nvim")
+    -- Git intergration
+    use { 'lewis6991/gitsigns.nvim' }
+
+    -- Indent show
+    use "lukas-reineke/indent-blankline.nvim"
+
+    -- Comment
+    use 'numToStr/Comment.nvim'
 end)
