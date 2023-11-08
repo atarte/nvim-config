@@ -54,7 +54,7 @@ return require('packer').startup(function(use)
     -- use { 'lewis6991/gitsigns.nvim' }
 
     -- Indent show
-    use "lukas-reineke/indent-blankline.nvim"
+    -- use "lukas-reineke/indent-blankline.nvim"
 
     -- Comment
     use 'numToStr/Comment.nvim'

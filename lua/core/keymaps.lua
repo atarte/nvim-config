@@ -64,6 +64,9 @@ vim.keymap.set('n', '<leader>pv', vim.cmd.Ex) -- go to explorer
 -- Applications and Plugins shortcuts
 -----------------------------------------------------------
 
+-- Comment
+-- see directly in the comment.lua file
+
 -- NvimTree
 -- map('n', '<C-n>', ':NvimTreeToggle<CR>')            -- open/close
 -- map('n', '<leader>f', ':NvimTreeRefresh<CR>')       -- refresh
